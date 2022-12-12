@@ -1,428 +1,35 @@
+/* --------------- GENERAL RULES ---------------*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+:root {
+  --curse-shade: #510a32;
+  --draco-shade: #143601;
+  --eleme-shade: #8e9aaf;
+  --hybri-shade: #ea9010;
+  --insec-shade: #669413;
+  --necro-shade: #001f29;
+  --ogroi-shade: #452103;
+  --relic-shade: #230c33;
+  --spect-shade: #1a1a1a;
+  --vampi-shade: #5f040e;
+  --dark-grey: #6e6e6e;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
-  background-color: #6E6E6E;
+  background-color: var(--dark-grey);
 }
-.pageHeader {
-  font-family: Luminari, fantasy;
-  text-align: center;
-  font-size: 3.5rem;
-  border-bottom: 1px double black;
-  color: white; 
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  font-family: 'Cormorant', serif;
-font-size: larger;
-margin-top: 75px;}
-
 img {
   width: 300px;
-  height: auto;
+  height: 300px;
+  object-fit: contain;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin: 20px;
   border: hidden;
-}
-.relic {
-  width: 350px;
-  border: 10px solid #9780a3;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #230c33;
-  color: #c1b3c8;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.relicheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  background-color: #441a59;
-  border: 4px double #9780a3;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-}
-.relicmaintext {
-  background-color: #441a59;
-  border: 2px solid #9780a3;
-  border-radius: 4px;
-  padding: 10px;
-}
-.reliclist {
-  padding: 5px;
-  background-color: #6d4d7e;
-  border-left: 4px solid #c1b3c8;
-  border-radius: 0 4px 4px 0;
-}
-
-.necro {
-  width: 350px;
-  border: 10px solid #678c97;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #001f29;
-  color: #b3c5cb;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.necroheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  background-color: #013f51;
-  border: 4px double #678c97;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-}
-.necromaintext {
-  border: 2px solid #678c97;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #013f51;
-}
-.necrolist {
-  padding: 5px;
-  background-color: #346574;
-  border-left: 4px solid #b3c5cb;
-  border-radius: 0 4px 4px 0;
-}
-/* .draco {
-  width: 350px;
-  border: 10px solid #a3b18a;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #3a5a40;
-  color: #dad7cd;
-  box-shadow: 4px 4px 4px 4px grey;
-}
-.dracoheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #a3b18a;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #588157;
-}
-.dracomaintext {
-  border: 2px solid #a3b18a;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #588157;
-}
-.dracolist {
-  padding: 5px;
-  background-color: #799a79;
-  border-left: 4px solid #dad7cd;
-  border-radius: 0 4px 4px 0;
-} */
-.draco {
-  width: 350px;
-  border: 10px solid #8a9b80;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #143601;
-  color: #d0d7cc;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.dracoheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #8a9b80;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #435e34;
-}
-.dracomaintext {
-  border: 2px solid #8a9b80;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #435e34;
-}
-.dracolist {
-  padding: 5px;
-  background-color: #728667;
-  border-left: 4px solid #d0d7cc;
-  border-radius: 0 4px 4px 0;
-}
-.vampi {
-  width: 350px;
-  border: 10px solid #b58287;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #5f040e;
-  color: #e1cdcf;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.vampiheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #b58287;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #88363f;
-}
-.vampimaintext {
-  border: 2px solid #b58287;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #88363f;
-}
-.vampilist {
-  padding: 5px;
-  background-color: #a6686f;
-  border-left: 4px solid #d2b4b7;
-  border-radius: 0 4px 4px 0;
-}
-
-/* .hybri {
-  width: 350px;
-  border: 10px solid #fedc99;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #fdb833;
-  color: #7f5c1a;
-  box-shadow: 4px 4px 4px 4px grey;
-}
-.hybriheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #fedc99;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #fecd70;
-}
-.hybrimaintext {
-  border: 2px solid #fedc99;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #fecd70;
-}
-.hybrilist {
-  padding: 5px;
-  background-color: #fedc99;
-  border-left: 4px solid #feeac2;
-  border-radius: 0 4px 4px 0;
-} */
-
-.hybri {
-  width: 350px;
-  border: 10px solid #f7d39f;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #ea9010;
-  color: #2f1d03;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.hybriheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #f7d39f;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #f0b158;
-}
-.hybrimaintext {
-  border: 2px solid #f7d39f;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #f0b158;
-}
-.hybrilist {
-  padding: 5px;
-  background-color: #f5c888;
-  border-left: 4px solid #fdf4e7;
-  border-radius: 0 4px 4px 0;
-}
-
-.eleme {
-  width: 350px;
-  border: 10px solid #dde1e7;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #8e9aaf;
-  color: #474d58;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.elemeheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #dde1e7;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #bbc2cf;
-}
-.elememaintext {
-  border: 2px solid #dde1e7;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #bbc2cf;
-}
-.elemelist {
-  padding: 5px;
-  background-color: #d2d7df;
-  border-left: 4px solid #dde1e7;
-  border-radius: 0 4px 4px 0;
-}
-
-.spect {
-  width: 350px;
-  border: 10px solid #878787;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #1a1a1a;
-  color: #ffffff;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.spectheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #878787;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #333333;
-}
-.spectmaintext {
-  border: 2px solid #878787;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #333333;
-}
-.spectlist {
-  padding: 5px;
-  background-color: #666666;
-  border-left: 4px solid #ffffff;
-  border-radius: 0 4px 4px 0;
-}
-
-.insec {
-  width: 350px;
-  border: 10px solid #405d0c;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #669413;
-  color: #263707;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.insecheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #405d0c;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #8dc02f;
-}
-.insecmaintext {
-  border: 2px solid #405d0c;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #8dc02f;
-}
-.inseclist {
-  padding: 5px;
-  background-color: #b3d574;
-  border-left: 4px solid #263707;
-  border-radius: 0 4px 4px 0;
-}
-
-.curse {
-  width: 350px;
-  border: 10px solid #976c84;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #510a32;
-  color: #dcced6;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.curseheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #976c84;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #743b5b;
-}
-.cursemaintext {
-  border: 2px solid #976c84;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #743b5b;
-}
-.curselist {
-  padding: 5px;
-  background-color: #855470;
-  border-left: 4px solid #dcced6;
-  border-radius: 0 4px 4px 0;
-}
-
-.ogroi {
-  width: 350px;
-  border: 10px solid #8f7a68;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #452103;
-  color: #dad3cd;
-  box-shadow: 4px 4px 4px 4px black;
-}
-.ogroiheader {
-  font-size: 150%;
-  font-family: Luminari, fantasy;
-  font-variant: small-caps;
-  border: 4px double #8f7a68;
-  border-radius: 4px;
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #6a4d35;
-}
-.ogroimaintext {
-  border: 2px solid #8f7a68;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: #6a4d35;
-}
-.ogroilist {
-  padding: 5px;
-  background-color: #7d644f;
-  border-left: 4px solid #dad3cd;
-  border-radius: 0 4px 4px 0;
-}
-
-.fact {
-  font-style: italic;
-  padding: 10px;
 }
 li {
   list-style-type: none;
@@ -433,29 +40,14 @@ span {
 p {
   padding-left: 5px;
 }
-
-* {
-  box-sizing: border-box;
-}
-.necro,
-.relic,
-.ogroi,
-.vampi,
-.insec,
-.curse,
-.spect,
-.draco,
-.eleme,
-.hybri {
-  width: 450px;
-}
+/* --------------- H1 and NAV ---------------*/
 #checkboxes {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid black;
   border-radius: 4px;
   width: 1220px;
-  margin: 0 auto;
+  margin: 50px auto 25px;
   box-shadow: 4px 4px 10px 4px #1F1F1F;
 }
 .checkContainer {
@@ -488,42 +80,196 @@ p {
   color: #1F1F1F;
   background-color: white;
 }
-h3 {
-  font-family: 'Cinzel', serif;
+.pageHeader {
+  font-family: Luminari, fantasy;
+  text-align: center;
+  font-size: 3.5rem;
+  color: white; 
+  padding: 25px 0;
+}
+/* --------------- CARDS ---------------*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-family: 'Cormorant', serif;
+  font-size: larger;
+  margin-top: 75px; 
+}
+.card {
+  width: 425px;
+  box-shadow: 4px 4px 10px 4px #1F1F1F;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+}
+.curse {
+  border: 10px solid #976c84;
+  background-color: var(--curse-shade);
+  color: #dcced6;
+}
+.draco {
+  border: 10px solid #8a9b80;
+  background-color: var(--draco-shade);
+  color: #d0d7cc;
+}
+.eleme {
+  border: 10px solid #dde1e7;
+  background-color: var(--eleme-shade);
+  color: #474d58;
+}
+.hybri {
+  border: 10px solid #f7d39f;
+  background-color: var(--hybri-shade);
+  color: #2f1d03;
+}
+.insec {
+  border: 10px solid #405d0c;
+  background-color: var(--insec-shade);
+  color: #263707;
+}
+.necro {
+  border: 10px solid #678c97;
+  background-color: var(--necro-shade);
+  color: #b3c5cb;
+}
+.ogroi {
+  border: 10px solid #8f7a68;
+  background-color: var(--ogroi-shade);
+  color: #dad3cd;
+}
+.relic {
+  border: 10px solid #9780a3;
+  background-color: var(--relic-shade);
+  color: #c1b3c8;
+}
+.spect {
+  border: 10px solid #878787;
+  background-color: var(--spect-shade);
+  color: #ffffff;
+}
+.vampi {
+  border: 10px solid #b58287;
+  background-color: var(--vampi-shade);
+  color: #e1cdcf;
 }
 
-.relicheader,
-.necroheader,
-.dracoheader,
-.vampiheader, 
-.hybriheader,
-.elemeheader, 
-.spectheader, 
-.insecheader, 
-.curseheader, 
-.ogroiheader {
+
+/* ----------------- CARD DETAILED TEXT -----------------  */
+.card-title {
+  font-size: 150%;
   font-family: Luminari, fantasy;
   font-weight:500;
+  font-family: Luminari, fantasy;
+  font-variant: small-caps;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  text-align: center;
+  font-family: 'Cinzel', serif;
 }
-
-.relic, 
-.necro,
-.draco, 
-.vampi, 
-.hybri,
-.eleme, 
-.spect,
-.insec,
-.curse,
-.ogroi {
-  width: 400px;
-  box-shadow: 4px 4px 10px 4px #1F1F1F;
+.maintext {
+  border-radius: 4px;
+  padding: 20px 10px;
+  background-color: #ffffff25;
+  border: 2px solid #ffffff50;
+  text-align: justify;
+  height: 300px;
 }
-p {display: none;}
-
 .fact {
+  font-style: italic;
+  padding: 10px;
   display: inline-block;
-  min-height: 112px;
+  min-height: 160px;
+  max-height: 160px;
+}
+.details {
+  display: none;
+}
+.curseheader {
+  border: 4px double #976c84;
+  background-color: #743b5b;
+}
+.dracoheader {
+  border: 4px double #8a9b80;
+  background-color: #435e34;
+}
+.elemeheader {
+  border: 4px double #dde1e7;
+  background-color: #bbc2cf;
+}
+.hybriheader {
+  border: 4px double #f7d39f;
+  background-color: #f0b158;
+}
+.insecheader {
+  border: 4px double #405d0c;
+  background-color: #8dc02f;
+}
+.necroheader {
+  background-color: #013f51;
+  border: 4px double #678c97;
+}
+.ogroiheader {
+  border: 4px double #8f7a68;
+  background-color: #6a4d35;
+}
+.relicheader {
+  background-color: #441a59;
+  border: 4px double #9780a3;
+}
+.spectheader {
+  border: 4px double #878787;
+  background-color: #333333;
+}
+.vampiheader {
+  border: 4px double #b58287;
+  background-color: #88363f;
+}
+.list {
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+.curselist {
+  background-color: #855470;
+  border-left: 4px solid #dcced6;
+}
+.dracolist {
+  background-color: #728667;
+  border-left: 4px solid #d0d7cc;
+}
+.elemelist {
+  background-color: #d2d7df;
+  border-left: 4px solid #474d58;
+}
+.hybrilist {
+  background-color: #f5c888;
+  border-left: 4px solid #fdf4e7;
+}
+.inseclist {
+  background-color: #b3d574;
+  border-left: 4px solid #263707;
+}
+.necrolist {
+  background-color: #346574;
+  border-left: 4px solid #b3c5cb;
+}
+.ogroilist {
+  background-color: #7d644f;
+  border-left: 4px solid #dad3cd;
+}
+.reliclist {
+  background-color: #6d4d7e;
+  border-left: 4px solid #c1b3c8;
+}
+.spectlist {
+  background-color: #666666;
+  border-left: 4px solid #ffffff;
+}
+.vampilist {
+  background-color: #a6686f;
+  border-left: 4px solid #d2b4b7;
 }
 
 /* https://coolors.co/palette/000000-1f1f1f-6e6e6e-6c0010-350008 */

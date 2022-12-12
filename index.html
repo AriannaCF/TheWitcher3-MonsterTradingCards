@@ -14,48 +14,48 @@
 
   <body>
     <header>
-      <h1 class="pageHeader">The Witcher 3: Wild Hunt - Monster Trading Cards</h1>
+      <h1 class="pageHeader">The Witcher 3: Wild Hunt Monster Trading Cards</h1>
     </header>
 
     <nav id="checkboxes">
       <div class="checkContainer">
-        <input id="curseCheck" type="checkbox" name="selector" checked/>
+        <input id="curseCheck" type="checkbox" name="selector" class="checkbox" checked/>
         <label for="curseCheck">Cursed Ones</label>
       </div>
       <div class="checkContainer">
-        <input id="dracoCheck" type="checkbox" name="selector" checked/>
+        <input id="dracoCheck" type="checkbox" name="selector" class="checkbox" checked/>
         <label for="dracoCheck">Draconids</label>
       </div>
       <div class="checkContainer">
-        <input id="elemeCheck" type="checkbox" name="selector" checked/>
+        <input id="elemeCheck" type="checkbox" name="selector" class="checkbox" checked/>
         <label for="elemeCheck">Elementa</label>
       </div>
       <div class="checkContainer">
-        <input id="hybriCheck" type="checkbox" name="selector" checked/>
+        <input id="hybriCheck" type="checkbox" name="selector" class="checkbox" checked/>
         <label for="hybriCheck">Hybrid</label>
       </div>
       <div class="checkContainer">
-        <input id="insecCheck" type="checkbox" name="selector" checked/>
+        <input id="insecCheck" type="checkbox" name="selector" class="checkbox" checked/>
         <label for="insecCheck">Insectoids</label>
       </div>
       <div class="checkContainer">
-        <input id="necroCheck" type="checkbox" name="selector" checked/>
+        <input id="necroCheck" type="checkbox" name="selector" class="checkbox" checked/>
         <label for="necroCheck">Necrophages</label>
       </div>
       <div class="checkContainer">
-        <input id="ogroiCheck" type="checkbox" name="selector" checked/>
+        <input id="ogroiCheck" type="checkbox" name="selector"  class="checkbox" checked/>
         <label for="ogroiCheck">Ogroids</label>
       </div>
       <div class="checkContainer">
-        <input id="relicCheck" type="checkbox" name="selector" checked/>
+        <input id="relicCheck" type="checkbox" name="selector"  class="checkbox" checked/>
         <label for="relicCheck">Relicts</label>
       </div>
       <div class="checkContainer">
-        <input id="spectCheck" type="checkbox" name="selector" checked/>
+        <input id="spectCheck" type="checkbox" name="selector"  class="checkbox" checked/>
         <label for="spectCheck">Specters</label>
       </div>
       <div class="checkContainer">
-        <input id="vampiCheck" type="checkbox" name="selector" checked/>
+        <input id="vampiCheck" type="checkbox" name="selector" class="checkbox" checked/>
         <label for="vampiCheck">Vampires</label>
       </div>
       
@@ -63,19 +63,20 @@
       <button class="selectButton" id="deselectAllButton">Deselect All</button>
 
     </nav>  
+
     <main class="container">
 
 <!--  <div class="relic">
         <h3 class="relicheader">CREATURE</h3>
         <img src="IMAGE" alt="ALTTEXT" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">"Quote"</p>
           <ul class="reliclist">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>:</li>
             <li><span>Weakness</span>: Relict Oil</li>
           </ul>
-          <p>
+          <p class="details">
             DESCRIPTION.
           </p>
         </div>
@@ -83,21 +84,21 @@
 
       <!-- sample -->
 
-      <div class="draco">
-        <h3 class="dracoheader">Basilisk</h3>
+      <div class="draco card">
+        <h3 class="dracoheader card-title">Basilisk</h3>
         <img src="monsterTradingCards/basilisk.webp" alt="Basilisk" />
-        <div class="dracomaintext">
+        <div class="maintext draco-text">
           <p class="fact">
             "In memory of the noble knight Roderick, slain during a valiant
             struggle against a basilisk. Let's hope the beast choked on his
             bones."
           </p>
-          <ul class="dracolist">
+          <ul class="dracolist list">
             <li><span>Class</span>: Draconid</li>
             <li><span>Habitat</span>: Caves, Abandoned Canal Branches</li>
             <li><span>Weakness</span>: Golden Oriole, Grapeshot, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Contrary to popular belief, basilisks cannot turn anything to stone
             with their gaze. That is small comfort, however, given that their
             acid, venom, claws, and teeth provide them many other ways to kill.
@@ -105,20 +106,20 @@
         </div>
       </div>
 
-      <div class="vampi">
-        <h3 class="vampiheader">Bruxa</h3>
+      <div class="vampi card">
+        <h3 class="vampiheader card-title">Bruxa</h3>
         <img src="monsterTradingCards/bruxa.webp" alt="Bruxa" />
-        <div class="vampimaintext">
+        <div class="maintext vampi-text">
           <p class="fact">
             "If you must travel through the woods, steer clear of any places
             where you can hear several different kinds of birds at once."
           </p>
-          <ul class="vampilist">
+          <ul class="vampilist list">
             <li><span>Class</span>: Vampire</li>
             <li><span>Habitat</span>: Ruins, abandoned villages</li>
             <li><span>Weakness</span>: Moon Dust, Black Blood, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             Bruxae are rare creatures, mostly living far from population
             centers. Those who decide to live near men avoid crowds and emerge
             from their shelters only at night.
@@ -126,21 +127,21 @@
         </div>
       </div>
 
-      <div class="eleme">
-        <h3 class="elemeheader">Djinn</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Djinn</h3>
         <img src="monsterTradingCards/djinn.webp" alt="Djinn" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">
             "The pitcher emitted a puff of glowing red smoke. The smoke
             pulsated, then gathered up into an irregular sphere floating in
             front of the poet's head..."
           </p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li><span>Habitat</span>: Bottles, Lamps</li>
             <li><span>Weakness</span>: Dimeritium, Elementa Oil</li>
           </ul>
-          <p>
+          <p class="details">
             Fighting a djinn is extraordinarily difficult. They can fling off
             spells in an instant that the most accomplished human mages could
             never cast with years of preparation. What's more, by manipulating
@@ -150,21 +151,21 @@
         </div>
       </div>
 
-      <div class="relic">
-        <h3 class="relicheader">Doppler</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Doppler</h3>
         <img src="monsterTradingCards/doppler.webp" alt="Doppler" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">
             "Your package? Your brother picked it up. You know, you two're damn
             near identical... Hey! Where are you running off to?!"
           </p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Towns and Villages</li>
             <li><span>Weakness</span>: Relict Oil</li>
           </ul>
 
-          <p>
+          <p class="details">
             Dopplers have incredible intellect and cunning, as well as the
             ability to take on the form of any humanoid or animal. This would
             make dopplers supreme assasins or thieves had not nature endowed
@@ -174,22 +175,22 @@
         </div>
       </div>
 
-      <div class="necro">
-        <h3 class="necroheader">Ghoul</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Ghoul</h3>
         <img src="monsterTradingCards/ghoul.webp" alt="Ghoul" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "Ghouls creep and crawl at night <br />
             Eating everything in sight<br />
             In a snap they'd eat you, too<br />
             Chop you up for a ghoulish stew!"<br />
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li><span>Habitat</span>: Anywhere near corpses</li>
             <li><span>Weakness</span>: Necrophage oil</li>
           </ul>
-          <p>
+          <p class="details">
             Ghouls usually feed in small groups, at times led by an alghoul.
             Since they delight most in the taste of fresh carcasses, they appear
             wherever newly-dug graves are to be found: cemeteries, crypts,
@@ -198,17 +199,17 @@
         </div>
       </div>
 
-      <div class="relic">
-        <h3 class="relicheader">Sylvan</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Sylvan</h3>
         <img src="monsterTradingCards/sylvan.webp" alt="Sylvan" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">"Sylvans are cruel, greedy and treacherous. Still, I prefer them to dh'oine."</p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Deep Woods</li>
             <li><span>Weakness</span>: Relict Oil, Samum, Devil's Puffball, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             Sylvans and Yakshas, a kindred species, are extremely rare woodland creatures whose appearance combines traits of goats and rotund men. These beings usually pose little danger, for they limit their contact with humans to playing harmless (though often bothersome) tricks and eating crops from their fields.
 
           </p>
@@ -218,12 +219,12 @@
 
       <!-- A -->
 
-      <div class="necro">
-        <h3 class="necroheader">Alghoul</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Alghoul</h3>
         <img src="monsterTradingCards/alghoul.webp" alt="Alghoul" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">"An alghoul's basically a badarse ghoul."</p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li>
               <span>Habitat</span>: Battlefields, anywhere there've been corpses
@@ -231,7 +232,7 @@
             </li>
             <li><span>Weakness</span>: Necrophage oil, Axii</li>
           </ul>
-          <p>
+          <p class="details">
             During combat alghouls try risky maneuvers aimed at knocking their
             opponents to the ground so the others can finish the job by tearing
             them to shreds. Like a normal ghoul, an injured alghoul can fall
@@ -240,17 +241,17 @@
         </div>
       </div>
 
-      <div class="vampi">
-        <h3 class="vampiheader">Alp</h3>
+      <div class="vampi card">
+        <h3 class="vampiheader card-title">Alp</h3>
         <img src="monsterTradingCards/alp.webp" alt="Alp" />
-        <div class="vampimaintext">
+        <div class="maintext vampi-text">
           <p class="fact">"Looked like a bruxa, but that was no bruxa..."</p>
-          <ul class="vampilist">
+          <ul class="vampilist list">
             <li><span>Class</span>: Vampire</li>
             <li><span>Habitat</span>: Towns and Villages</li>
             <li><span>Weakness</span>: Yrden, Moondust, Black Blood</li>
           </ul>
-          <p>
+          <p class="details">
             Alps are vampires that resemble bruxae in appearance. They usually
             take on the form of a woman, though they can also appear as
             animals.They attack at night and are most active when the moon is
@@ -259,66 +260,66 @@
         </div>
       </div>
 
-      <div class="insec">
-        <h3 class="insecheader">Arachasae</h3>
+      <div class="insec card">
+        <h3 class="insecheader card-title">Arachasae</h3>
         <img src="monsterTradingCards/Arachasae.webp" alt="Arachasae" />
-        <div class="insecmaintext">
+        <div class="maintext insec-text">
           <p class="fact">"N'aracche aen woed endicen [Let sleeping arachasae lie]."</p>
-          <ul class="inseclist">
+          <ul class="inseclist list">
             <li><span>Class</span>: Insectoid</li>
             <li><span>Habitat</span>: Damp woodlands and swamps</li>
             <li><span>Weakness</span>: Golden Oriole, Insectoid Oil</li>
           </ul>
-          <p>
+          <p class="details">
             At first glance, a stationary arachas often looks like a part of the forest undergrowth, a fact it uses to deadly advantage when hunting. It usually begins a battle by spitting venom, then tries to grab its prey with prehensile feelers in order to drag it within reach of its crushing pincers.
           </p>
         </div>
       </div>
 
-      <div class="insec">
-        <h3 class="insecheader">Arachnomorph</h3>
+      <div class="insec card">
+        <h3 class="insecheader card-title">Arachnomorph</h3>
         <img src="monsterTradingCards/arachnomorph.png" alt="Arachnomorph" />
-        <div class="insecmaintext">
+        <div class="maintext insec-text">
           <p class="fact">"The spider shall never lie down with the fly.
             "</p>
-          <ul class="inseclist">
+          <ul class="inseclist list">
             <li><span>Class</span>: Insectoid</li>
             <li><span>Habitat</span>: deep dark caves</li>
             <li><span>Weakness</span>: Insectoid Oil, Aard, Axii,</li>
           </ul>
-          <p>
+          <p class="details">
             Anyone who does come across an arachnomorph had best hope his conscience is clear and his worldly affairs are in order, for his life shall soon end, as not even the fastest man in the world can outrun them and only a few witchers can hope to slay them.
           </p>
         </div>
       </div>
 
-      <div class="curse">
-        <h3 class="curseheader">Archespore</h3>
+      <div class="curse card">
+        <h3 class="curseheader card-title">Archespore</h3>
         <img src="monsterTradingCards/archespore.webp" alt="Archespore" />
-        <div class="cursemaintext">
+        <div class="maintext curse-text">
           <p class="fact">"Looks like a flower to me. A hideous, disgusting flower."</p>
-          <ul class="curselist">
+          <ul class="curselist list">
             <li><span>Class</span>: Cursed One</li>
             <li><span>Habitat</span>: Grows in the soil of places that have seen pogrom, bloody rituals or cruel murders</li>
             <li><span>Weakness</span>: Cursed oil, Aard, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             The peculiar appearance of archespores makes them practically impossible to discern amidst other plants. By the time one draws close enough to realize what they are, it is often too late to flee. 
           </p>
         </div>
       </div>
 
-      <div class="insec">
-        <h3 class="insecheader">Armored Arachasae</h3>
+      <div class="insec card">
+        <h3 class="insecheader card-title">Armored Arachasae</h3>
         <img src="monsterTradingCards/armoredArachas.webp" alt="Armored Arachas" />
-        <div class="insecmaintext">
+        <div class="maintext insec-text">
           <p class="fact">"That's the kinda john we call an 'armored arachas.' Hard and prickly on the otuside, but get 'im undressed and everything's soft and squishy."</p>
-          <ul class="inseclist">
+          <ul class="inseclist list">
             <li><span>Class</span>: Insectoid</li>
             <li><span>Habitat</span> Under hollow tree stumps</li>
             <li><span>Weakness</span>: Golden Oriole, Insectoid Oil</li>
           </ul>
-          <p>
+          <p class="details">
             An arachas' only weakness is its soft, sensitive abdomen. Some arachasae hide this under hollow tree stumps, while other, "armored" varieties exist which have grown a thick carapace that covers all the more delicate parts of their bodies.
           </p>
         </div>
@@ -326,37 +327,37 @@
 
       <!-- B -->
 
-      <div class="spect">
-        <h3 class="spectheader">Barghest</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Barghest</h3>
         <img src="monsterTradingCards/barghest.webp" alt="Barghest" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">"Shun sin! Renounce foul deeds! And if evil threatens to overwhelm your will, ponder the fate of the Outskirts of Vizima!"</p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: In packs near roads, usually at night</li>
             <li><span>Weakness</span>: Specter Oil, Moon Dust, Axii, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             Folk of simple or superstitious minds claim committing particularly rotten acts will bring down the wrath of the gods in the form of "barghests,".Witchers rarely believe in the gods, but they do accept that barghests exist and are always connected with some sequence of tragic events that happened in the past.
           </p>
         </div>
       </div>
 
-      <div class="draco">
-        <h3 class="dracoheader">Basilisk</h3>
+      <div class="draco card">
+        <h3 class="dracoheader card-title">Basilisk</h3>
         <img src="monsterTradingCards/basilisk.webp" alt="Basilisk" />
-        <div class="dracomaintext">
+        <div class="maintext draco-text">
           <p class="fact">
             "In memory of the noble knight Roderick, slain during a valiant
             struggle against a basilisk. Let's hope the beast choked on his
             bones."
           </p>
-          <ul class="dracolist">
+          <ul class="dracolist list">
             <li><span>Class</span>: Draconid</li>
             <li><span>Habitat</span>: Caves, Abandoned Canal Branches</li>
             <li><span>Weakness</span>: Golden Oriole, Grapeshot, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Contrary to popular belief, basilisks cannot turn anything to stone
             with their gaze. That is small comfort, however, given that their
             acid, venom, claws, and teeth provide them many other ways to kill.
@@ -364,22 +365,22 @@
         </div>
       </div>
 
-      <div class="spect">
-        <h3 class="spectheader">Beann'shies</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Beann'shies</h3>
         <img src="monsterTradingCards/banshee.webp" alt="Banshee" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">
             "Beann'shies howl and shriek, and if you hear their cry, you can
             know you'll join the ranks of the dead that night.""
           </p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: The Duchy of Toussaint</li>
             <li>
               <span>Weakness</span>: Specter dust, Infused dust, Lunar shards
             </li>
           </ul>
-          <p>
+          <p class="details">
             Old gossips claim beann'shies are the spirits of women stuck between
             life and death due to traumatic experiences. Their wails and howls
             are considered ill omens of imminent, inevitable death, though they
@@ -388,52 +389,52 @@
         </div>
       </div>
 
-      <div class="curse">
-        <h3 class="curseheader">Berserker</h3>
+      <div class="curse card">
+        <h3 class="curseheader card-title">Berserker</h3>
         <img src="monsterTradingCards/berserker.webp" alt="Berserker" />
-        <div class="cursemaintext">
+        <div class="maintext curse-text">
           <p class="fact">"Now finish your soup, or a berserker'll come and swallow ye whole."</p>
-          <ul class="curselist">
+          <ul class="curselist list">
             <li><span>Class</span>: Cursed One</li>
             <li><span>Habitat</span>: Anywhere humans are, more common in Skellige</li>
             <li><span>Weakness</span>: Devil's Puffball, Cursed oil</li>
           </ul>
-          <p>
+          <p class="details">
             Skellige legends speak of men known as berserkers who transform into bears when overwhelmed by battle rage. In doing so, they lose all self-awareness and are driven by a bloodlust which they must satiate in order to return to human form.
           </p>
         </div>
       </div>
 
-      <div class="curse">
-        <h3 class="curseheader">Botchling</h3>
+      <div class="curse card">
+        <h3 class="curseheader card-title">Botchling</h3>
         <img src="monsterTradingCards/botchling.webp" alt="Botchling" />
-        <div class="cursemaintext">
+        <div class="maintext curse-text">
           <p class="fact">"Saying a botchling's ugly is like saying shit's not particularly tasty: can't say it's a lie, but it doesn't exactly convey the whole truth, either."</p>
-          <ul class="curselist">
+          <ul class="curselist list">
             <li><span>Class</span>: Cursed One</li>
             <li><span>Habitat</span>: Anywhere an unwanted child is hastily discarded without a proper burial</li>
             <li><span>Weakness</span>: Cursed oil, Axii</li>
           </ul>
-          <p>
+          <p class="details">
             Born of dead, unwanted babies discarded without a proper burial, the botchlings' appearance is that of a partially-decayed fetus, their unformed flesh twisted with hate, fear and malice.
           </p>
         </div>
       </div>
 
-      <div class="vampi">
-        <h3 class="vampiheader">Bruxa</h3>
+      <div class="vampi card">
+        <h3 class="vampiheader card-title">Bruxa</h3>
         <img src="monsterTradingCards/bruxa.webp" alt="Bruxa" />
-        <div class="vampimaintext">
+        <div class="maintext vampi-text">
           <p class="fact">
             "If you must travel through the woods, steer clear of any places
             where you can hear several different kinds of birds at once."
           </p>
-          <ul class="vampilist">
+          <ul class="vampilist list">
             <li><span>Class</span>: Vampire</li>
             <li><span>Habitat</span>: Ruins, abandoned villages</li>
             <li><span>Weakness</span>: Moon Dust, Black Blood, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             Bruxae are rare creatures, mostly living far from population
             centers. Those who decide to live near men avoid crowds and emerge
             from their shelters only at night.
@@ -442,21 +443,21 @@
       </div>
 
       <!-- C -->
-      <div class="relic">
-        <h3 class="relicheader">Chort</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Chort</h3>
         <img src="monsterTradingCards/chort.webp" alt="Chort" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">
             "Chorts are smaller than fiends, true. But still big enough to
             kill."
           </p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Cave burrows</li>
             <li><span>Weakness</span>: Devil's Puffball, Relict Oil</li>
           </ul>
 
-          <p>
+          <p class="details">
             Chorts fight with little finesse, running straight towards their
             opponent and trying to knock him to the ground with the force of
             their charge. After downing their foe they bite, kick and strike
@@ -465,21 +466,21 @@
         </div>
       </div>
 
-      <div class="draco">
-        <h3 class="dracoheader">Cockatrice</h3>
+      <div class="draco card">
+        <h3 class="dracoheader card-title">Cockatrice</h3>
         <img src="monsterTradingCards/cockatrice.webp" alt="Cockatrice" />
-        <div class="dracomaintext">
+        <div class="maintext draco-text">
           <p class="fact">
             "Had meself eight heifers, five of 'em milchers. Then this
             cockatrice sprung up nearby, and now all's I got left's dried
             patties and an empty field."
           </p>
-          <ul class="dracolist">
+          <ul class="dracolist list">
             <li><span>Class</span>: Draconid</li>
             <li><span>Habitat</span>: Caves and Dark Cellars</li>
             <li><span>Weakness</span>: Grapeshot, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Foolish superstitions claim cockatrices, like basilisks, can kill
             with their gaze alone. That is utter nonsense, however. One should
             instead watch out for its sharp beak and long tail, which it can
@@ -488,21 +489,21 @@
         </div>
       </div>
 
-      <div class="relic">
-        <h3 class="relicheader">Crones</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Crones</h3>
         <img src="monsterTradingCards/crones.webp" alt="Crones" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">
             "Sister crones, hand in hand, terrors of the sea and land, thus do
             go about, about: thrice to thine and thrice to mine, and thrice
             again, to make up nine."
           </p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Crookback Bog</li>
             <li><span>Weakness</span>: Relict Oil, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             The isolated corners of our world harbor creatures older than
             humans, older than academies and mages, older even than elves and
             dwarves. The Crones of Crookback Bog are such creatures. No one
@@ -512,17 +513,17 @@
         </div>
       </div>
 
-       <div class="ogroi">
-        <h3 class="ogroiheader">Cyclops</h3>
+       <div class="ogroi card">
+        <h3 class="ogroiheader card-title">Cyclops</h3>
         <img src="monsterTradingCards/cyclops.webp" alt="Cyclops" />
-        <div class="ogroimaintext">
+        <div class="maintext ogroi-text">
           <p class="fact">"How about this... we take a big stake, sharpen its tip, jam it in the cyclops' eye - then sneak out of the cave disguised as sheep. How's that not a good idea?"</p>
-          <ul class="ogroilist">
+          <ul class="ogroilist list">
             <li><span>Class</span>: Ogroid</li>
             <li><span>Habitat</span>: Wherever they please, usually somewhere inconvenient</li>
             <li><span>Weakness</span>: Ogroid Oil, Quen, Axii</li>
           </ul>
-          <p>
+          <p class="details">
             Cyclopses can easily be recognized by the single eye located in the center of their foreheads. If for some reason that is not visible, other tell-tale signs are their enormous size, incredible strength and a seething hatred for all humans.</p>
         </div>
       </div>
@@ -530,21 +531,21 @@
 
       <!-- D -->
 
-      <div class="eleme">
-        <h3 class="elemeheader">Djinn</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Djinn</h3>
         <img src="monsterTradingCards/djinn.webp" alt="Djinn" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">
             "The pitcher emitted a puff of glowing red smoke. The smoke
             pulsated, then gathered up into an irregular sphere floating in
             front of the poet's head..."
           </p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li><span>Habitat</span>: Bottles, Lamps</li>
             <li><span>Weakness</span>: Dimeritium, Elementa Oil</li>
           </ul>
-          <p>
+          <p class="details">
             Fighting a djinn is extraordinarily difficult. They can fling off
             spells in an instant that the most accomplished human mages could
             never cast with years of preparation. What's more, by manipulating
@@ -554,21 +555,21 @@
         </div>
       </div>
 
-      <div class="relic">
-        <h3 class="relicheader">Doppler</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Doppler</h3>
         <img src="monsterTradingCards/doppler.webp" alt="Doppler" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">
             "Your package? Your brother picked it up. You know, you two're damn
             near identical... Hey! Where are you running off to?!"
           </p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Towns and Villages</li>
             <li><span>Weakness</span>: Relict Oil</li>
           </ul>
 
-          <p>
+          <p class="details">
             Dopplers have incredible intellect and cunning, as well as the
             ability to take on the form of any humanoid or animal. This would
             make dopplers supreme assasins or thieves had not nature endowed
@@ -578,20 +579,20 @@
         </div>
       </div>
 
-      <div class="necro">
-        <h3 class="necroheader">Drowner</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Drowner</h3>
         <img src="monsterTradingCards/drowner.webp" alt="Drowner" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "When at he water's edge, you gotta be quiet. First of all, so as
             not to scare the fish. Second - so you don't attract drowners."
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li><span>Habitat</span>: Beaches and bodies of water</li>
             <li><span>Weakness</span>: Igni</li>
           </ul>
-          <p>
+          <p class="details">
             A drowner resembles a corpse dredged from the bottom of a pond. It
             is sickly blue or green in color, with slime and sludge oozing out
             of every pore and the acrid stench of rot wafting off of it.
@@ -601,20 +602,20 @@
 
       <!-- E -->
 
-      <div class="eleme">
-        <h3 class="elemeheader">Earth Elemental</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Earth Elemental</h3>
         <img src="monsterTradingCards/EarthElemental.webp" alt="Earth Elemental" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">
             "How to survive an encounter with an earth element? Simple. Run.
             Fast as you can."
           </p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li><span>Habitat</span>: Elven ruins</li>
             <li><span>Weakness</span>: Dimeritium, Elementa oil</li>
           </ul>
-          <p>
+          <p class="details">
             Earth elementals are made of mud, clay, sand and rock dust clumped
             together with water and brought alive with magic. While seemingly
             slow and ponderous, these creatures are nevertheless dangerous and
@@ -623,20 +624,20 @@
         </div>
       </div>
 
-      <div class="vampi">
-        <h3 class="vampiheader">Ekimmara</h3>
+      <div class="vampi card">
+        <h3 class="vampiheader card-title">Ekimmara</h3>
         <img src="monsterTradingCards/ekimmara.webp" alt="Ekimmara" />
-        <div class="vampimaintext">
+        <div class="maintext vampi-text">
           <p class="fact">
             "Bah, ain't nothing to fear. Ekimmaras, why, they ain't nothing more
             than overgrown bats."
           </p>
-          <ul class="vampilist">
+          <ul class="vampilist list">
             <li><span>Class</span>: Vampire</li>
             <li><span>Habitat</span>: Ruins, abandoned villages</li>
             <li><span>Weakness</span>: Devil's Puffball, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             While ekimmaras do bear a strong resemblance to overgrown bats, they
             are not nearly as easy to dispatch. They tear their victims to
             shreds using long, sharp claws and then slurp the splattered blood
@@ -645,55 +646,55 @@
         </div>
       </div>
 
-      <div class="insec">
-        <h3 class="insecheader">Endrega Warrior</h3>
+      <div class="insec card">
+        <h3 class="insecheader card-title">Endrega Warrior</h3>
         <img src="monsterTradingCards/endregaWarrior.webp" alt="Endrega Warrior" />
-        <div class="insecmaintext">
+        <div class="maintext insec-text">
           <p class="fact">"Scared of these endregas, are you? Just wait till you see the warriors."
           </p>
-          <ul class="inseclist">
+          <ul class="inseclist list">
             <li><span>Class</span>: Insectoid</li>
             <li><span>Habitat</span>: Forests, abandoned villages</li>
             <li><span>Weakness</span>:</li>
           </ul>
-          <p>
+          <p class="details">
             An endrega warrior's main weapon is its long tail, which is tipped with a club-like growth and spiked with venomous quils. Powerful abdominal muscles allow it to swing this tail with enough force to kill most lesser opponents in one blow.          </p>
         </div>
       </div>
 
 
-      <div class="spect">
-        <h3 class="spectheader">Ethereal</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Ethereal</h3>
         <img src="monsterTradingCards/ethereal.webp" alt="Ethereal" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">"The human mind is as wild and unexplored a place as any land far beyond the seas. It is inhabited by manifold dangers - fears, painful memories, traumas. These lurk on the edge of our consciousness, like predators waiting for a moment of weakness in which to reveal themselves... and destroy us."</p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: The von Everec Estate</li>
             <li><span>Weakness</span>: Specter Oil, Blizzard</li>
           </ul>
-          <p><i>
+          <p class="details"><i>
             "The Ethereal resembled Olgierd in appearance and also fought using a technique similar to his. A group of six such creatures lay in wait for Geralt, yet at first only one engaged him in battle.           </i></p>
         </div>
       </div>
 
       <!-- F -->
 
-      <div class="relic">
-        <h3 class="relicheader">Fiend</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Fiend</h3>
         <img src="monsterTradingCards/fiend.webp" alt="Fiend" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">
             "I regret to inform Your Grace that Your Grace's son fell while
             hunting a fiend. He died on the spot, along with his squire, his
             guide, the beaters, his peasant entourage and his hounds."
           </p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Swamps and Bogs</li>
             <li><span>Weakness</span>: Relict Oil, Samum, Devil's Puffball</li>
           </ul>
-          <p>
+          <p class="details">
             Fiends are walking mountains of muscle capped with horned,
             tooth-filled heads. When possible they avoid humans, but when not
             possible, they kill them, and without much difficulty.
@@ -701,21 +702,21 @@
         </div>
       </div>
 
-      <div class="eleme">
-        <h3 class="elemeheader">Fire Elemental</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Fire Elemental</h3>
         <img src="monsterTradingCards/FireElemental.webp" alt="Fire Elemental" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">
             "The first fire elemental was created by Ransant Alvaro. Sadly,
             flames engulfed his entire laboratory, burning it - along with every
             other building on his block - to ash."
           </p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li><span>Habitat</span>: Magical Ruins</li>
             <li><span>Weakness</span>: Dimeritium, Northern Wind, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Fire is the most destructive of the elements, thus the aggressive
             lethality of the creature that embodies its essence should come as
             no surprise. Fire elementals are forged in complicated magic rituals
@@ -725,21 +726,21 @@
         </div>
       </div>
 
-      <div class="necro">
-        <h3 class="necroheader">Foglet</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Foglet</h3>
         <img src="monsterTradingCards/foglet.webp" alt="Foglet" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "If night ever catches you in the swamps, stay put and wait for
             dawn, even if it means standing waist deep in water with leeches
             crawling down your trousers."
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li><span>Habitat</span>: Swamp fog</li>
             <li><span>Weakness</span>: Moon Dust, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Foglets have powerful arms and claws like Zerrikanian kinjals, yet
             what makes them truly dangerous is their mastery of deception,
             beguilement and disorientation.
@@ -747,19 +748,19 @@
         </div>
       </div>
 
-      <div class="draco">
-        <h3 class="dracoheader">Forktail</h3>
+      <div class="draco card">
+        <h3 class="dracoheader card-title">Forktail</h3>
         <img src="monsterTradingCards/forktail.webp" alt="Forktail" />
-        <div class="dracomaintext">
+        <div class="maintext draco-text">
           <p class="fact">
             "Forktails... Bah! Fuckers' tails're more like cleavers."
           </p>
-          <ul class="dracolist">
+          <ul class="dracolist list">
             <li><span>Class</span>: Draconid</li>
             <li><span>Habitat</span>: Mountaintops snd other high places</li>
             <li><span>Weakness</span>: Golden Oriole, Grapeshot, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Forktails owe their quaint name to the long sharp growths at the tip
             of their tails. A blow from this weapon can slice an oaken shield in
             two – along with the arm that was carrying it.
@@ -769,17 +770,17 @@
 
       <!-- G -->
 
-      <div class="eleme">
-        <h3 class="elemeheader">Gargoyle</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Gargoyle</h3>
         <img src="monsterTradingCards/gargoyle.webp" alt="Gargoyle" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">"It just me, or is that gargoyle ogling us?"</p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li><span>Habitat</span>: Abandoned Ruins and Castles</li>
             <li><span>Weakness</span>: Dimeritium, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Gargoyles are stone statues brought to life by magic in order to
             guard mages' laboratories and lairs from intruders. Their appearance
             alone has scared off more than one prospective burglar. Those who do
@@ -790,22 +791,22 @@
         </div>
       </div>
 
-      <div class="necro">
-        <h3 class="necroheader">Ghoul</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Ghoul</h3>
         <img src="monsterTradingCards/ghoul.webp" alt="Ghoul" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "Ghouls creep and crawl at night <br />
             Eating everything in sight<br />
             In a snap they'd eat you, too<br />
             Chop you up for a ghoulish stew!"<br />
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li><span>Habitat</span>: Anywhere near corpses</li>
             <li><span>Weakness</span>: Necrophage oil</li>
           </ul>
-          <p>
+          <p class="details">
             Ghouls usually feed in small groups, at times led by an alghoul.
             Since they delight most in the taste of fresh carcasses, they appear
             wherever newly-dug graves are to be found: cemeteries, crypts,
@@ -814,36 +815,36 @@
         </div>
       </div>
 
-      <div class="insec">
-        <h3 class="insecheader">Giant Centipede</h3>
+      <div class="insec card">
+        <h3 class="insecheader card-title">Giant Centipede</h3>
         <img src="monsterTradingCards/giantCentipede.webp" alt="Giant Centipede" />
-        <div class="insecmaintext">
+        <div class="maintext insec-text">
           <p class="fact">"Among the fascinating flora and fauna of the duchy of Toussaint, one also encounters creatures of the decidedly unpleasant sort, such as giant centipedes."</p>
-          <ul class="inseclist">
+          <ul class="inseclist list">
             <li><span>Class</span>: Insectoid</li>
             <li><span>Habitat</span>: Rural Toussaint</li>
             <li><span>Weakness</span>:Insectoid Oil, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             Giant centipedes are able to burrow into the ground with shocking speed, only to then appear back on the surface in another place. Once they select a target, they will circle it determinedly, trying to get close enough to deliver a blow.
           </p>
         </div>
       </div>
 
-      <div class="relic">
-        <h3 class="relicheader">Godling</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Godling</h3>
         <img src="monsterTradingCards/godling.webp" alt="Godling" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">
             "[Godlings] are always the first to go. Such is the price we pay for
             civilization's forward march."
           </p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Burrows, moss-covered stumps</li>
             <li><span>Weakness</span>: Don't attack Godlings</li>
           </ul>
-          <p>
+          <p class="details">
             Godlings are similar to children in behavior and appearance, and,
             like children, delight in mischief. They watch over people as well
             as animals, but, shy creatures by nature, the try to do so while
@@ -852,21 +853,21 @@
         </div>
       </div>
 
-      <div class="eleme">
-        <h3 class="elemeheader">Golem</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Golem</h3>
         <img src="monsterTradingCards/golem.webp" alt="Golem" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">
             "If want [sic] us to break through this wall, we're gonna need
             twenty sappers, seven mules and a hundredweight of saltpeter. Or one
             golem."
           </p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li><span>Habitat</span>: Elven ruins and caves</li>
             <li><span>Weakness</span>: Dimerituim, Elementa oil</li>
           </ul>
-          <p>
+          <p class="details">
             Defeating a golem is extraordinarily difficult: for obvious reasons
             it does not bleed, it feels no fear or mercy and it is invulnerable
             to fire and poison. The monster's only weakness is acid.
@@ -874,10 +875,10 @@
         </div>
       </div>
 
-      <div class="necro">
-        <h3 class="necroheader">Grave Hag</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Grave Hag</h3>
         <img src="monsterTradingCards/graveHag.webp" alt="Grave Hag" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "Burying bodies out in the fields, why, it's like laying out a
             welcome mat for monsters! Best case scenario, some ghouls will sniff
@@ -885,12 +886,12 @@
             forbid, a grave hag takes to feeding at your cemetery, you'll have
             no end of trouble."<br />
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li><span>Habitat</span>: Battlefields and Graveyards</li>
             <li><span>Weakness</span>: Black Blood, Yrden, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Grave hags feed on human corpses and in particular on the rotten
             marrow which they slurp from human bones using their long,
             prehensile tongues. Once a hag has devoured all corpses within
@@ -900,20 +901,20 @@
         </div>
       </div>
 
-      <div class="hybri">
-        <h3 class="hybriheader">Griffin</h3>
+      <div class="hybri card">
+        <h3 class="hybriheader card-title">Griffin</h3>
         <img src="monsterTradingCards/griffin.webp" alt="Griffin" />
-        <div class="hybrimaintext">
+        <div class="maintext hybri-text">
           <p class="fact">
             "Aye, half-eagle, half tomcat, just like on the lord's crest. 'Cept
             this 'un was carryin' me dead cow 'stead of a scepter."
           </p>
-          <ul class="hybrilist">
+          <ul class="hybrilist list">
             <li><span>Class</span>: Hybrid</li>
             <li><span>Habitat</span>: Mountains, villages</li>
             <li><span>Weakness</span>: Grapeshot, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Griffins mate for life and when their partner is attacked they will
             defend it to the death. For this reason they are often considered
             the embodiment of courage, loyalty and fighting spirit.
@@ -923,20 +924,20 @@
 
       <!-- H -->
 
-      <div class="hybri">
-        <h3 class="hybriheader">Harpy</h3>
+      <div class="hybri card">
+        <h3 class="hybriheader card-title">Harpy</h3>
         <img src="monsterTradingCards/harpy.webp" alt="Harpy" />
-        <div class="hybrimaintext">
+        <div class="maintext hybri-text">
           <p class="fact">
             "Most monsters don't actually keep any treasure in their lairs.
             Harpies, though - they like shiny things."
           </p>
-          <ul class="hybrilist">
+          <ul class="hybrilist list">
             <li><span>Class</span>: Hybrid</li>
             <li><span>Habitat</span>: High Cliffs and Rocky Ravines</li>
             <li><span>Weakness</span>: Grapeshot, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Harpies hunt in flocks consisting of a handful to up to twenty
             individuals. Though rather cowardly and cautious, harpies fiercely
             defend their nests and will not hesitate to attack when outnumbering
@@ -945,20 +946,20 @@
         </div>
       </div>
 
-      <div class="vampi">
-        <h3 class="vampiheader">Higher Vampire</h3>
+      <div class="vampi card">
+        <h3 class="vampiheader card-title">Higher Vampire</h3>
         <img src="monsterTradingCards/higherVampire.webp" alt="Higher Vampire" />
-        <div class="vampimaintext">
+        <div class="maintext vampi-text">
           <p class="fact">
             "Men, the polite ones, at least, would call me a monster. A
             blood-drinking freak."
           </p>
-          <ul class="vampilist">
+          <ul class="vampilist list">
             <li><span>Class</span>: Vampire</li>
             <li><span>Habitat</span>:Towns and Villages</li>
             <li><span>Weakness</span>: Vampire Oil, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             Higher vampires are, much more similar to humans than their those
             bat-like blood slurping cousins. They not only resemble us in
             appearance, but also share our intelligence and behavioral patterns.
@@ -966,22 +967,22 @@
         </div>
       </div>
 
-      <div class="eleme">
-        <h3 class="elemeheader">Hound of the Wild Hunt</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Hound of the Wild Hunt</h3>
         <img src="monsterTradingCards/HOTWH.webp" alt="Hound of the Wild Hunt" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">
             "Baying at the heels of the Wild hunt are its Hounds, fierce beasts
             which follow it like dust clouds trailing after a comet. Hushed
             legends speak of them losing their way at times and descending from
             the night sky to earth, cold and death following in their wake."
           </p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li><span>Habitat</span>: Always together with the Wild Hunt</li>
             <li><span>Weakness</span>: Dimeritium, Igni, Axii</li>
           </ul>
-          <p>
+          <p class="details">
             The Hounds' chief weapons are their claws and teeth. Their battle
             tactics rely on knocking their opponents to the ground before
             tearing them to shreds. Badly wounded Hounds fall into a kind of
@@ -990,14 +991,14 @@
         </div>
       </div>
 
-      <div class="spect">
-        <h3 class="spectheader">Hym</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Hym</h3>
         <img src="monsterTradingCards/hym.webp" alt="Hym" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">
             "Some men have got good reason to fear their own shadows."
           </p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li>
               <span>Habitat</span>: Attached to those who feel a terrible
@@ -1005,7 +1006,7 @@
             </li>
             <li><span>Weakness</span>: Moon dust, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             These wraiths only latch onto particularly despicable individuals who have committed some unspeakable crime. To all others, they remain completely invisible. When they do show themselves to the one they torment, they appear as a shadow-clad, humanoid silhouette with long, sharp claws.
           </p>
         </div>
@@ -1013,22 +1014,22 @@
 
       <!-- I -->
 
-      <div class="eleme">
-        <h3 class="elemeheader">Ice Elemental</h3>
+      <div class="eleme card">
+        <h3 class="elemeheader card-title">Ice Elemental</h3>
         <img src="monsterTradingCards/IceElemental.webp" alt="Ice Elemental" />
-        <div class="elememaintext">
+        <div class="maintext eleme-text">
           <p class="fact">
             "I thought to myself - what's a hunk of ice doing in the middle of
             some lab? And then that hunk of ice got up and broke my legs."
           </p>
-          <ul class="elemelist">
+          <ul class="elemelist list">
             <li><span>Class</span>: Elemental</li>
             <li>
               <span>Habitat</span>: Wherever the mage who created it decides
             </li>
             <li><span>Weakness</span>: Dimeritium, Elementa Oil</li>
           </ul>
-          <p>
+          <p class="details">
             An ice elemental is a mass of frozen water animated by magic.
             Deprived of consciousness or independent will, this elemental is
             boundlessly obedient to the orders of the mage who created it. Those
@@ -1037,54 +1038,54 @@
         </div>
       </div>
 
-      <div class="ogroi">
-        <h3 class="ogroiheader">Ice Giant</h3>
+      <div class="ogroi card">
+        <h3 class="ogroiheader card-title">Ice Giant</h3>
         <img src="monsterTradingCards/iceGiant.webp" alt="Ice Giant" />
-        <div class="ogroimaintext">
+        <div class="maintext ogroi-text">
           <p class="fact">"Fled one time in my life. From the Ice Giant. And know what? I'm not a bit ashamed.
             "</p>
-          <ul class="ogroilist">
+          <ul class="ogroilist list">
             <li><span>Class</span>: Ogroid</li>
             <li><span>Habitat</span>: The Isle of Undvik</li>
             <li><span>Weakness</span>: Ogroid Oil, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             This powerful, primeval monster is quite possibly the last of its race. The Ice Giant resembles a man in many respects, but is blue as frost and taller than a tree.          </p>
         </div>
       </div>
 
-      <div class="ogroi">
-        <h3 class="ogroiheader">Ice Troll</h3>
+      <div class="ogroi card">
+        <h3 class="ogroiheader card-title">Ice Troll</h3>
         <img src="monsterTradingCards/iceTroll.webp" alt="Ice Troll" />
-        <div class="ogroimaintext">
+        <div class="maintext ogroi-text">
           <p class="fact">"Our winter's cold and deep, frostbite eats your feet, snow falls down and hides the ground and ice trolls wake from sleep!"</p>
-          <ul class="ogroilist">
+          <ul class="ogroilist list">
             <li><span>Class</span>: Ogroid</li>
             <li><span>Habitat</span>:High mountain ridges</li>
             <li><span>Weakness</span>: Ogroid Oil, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Ice trolls are crueler than their rocky kin. Though they use similar tactics in battle – tossing stones and swinging with their mighty fists – they are heartier and stronger than rock trolls and thus more dangerous.           </p>
         </div>
       </div>
 
       <!-- K -->
 
-      <div class="vampi">
-        <h3 class="vampiheader">Katakan</h3>
+      <div class="vampi card">
+        <h3 class="vampiheader card-title">Katakan</h3>
         <img src="monsterTradingCards/katakan.webp" alt="Katakan" />
-        <div class="vampimaintext">
+        <div class="maintext vampi-text">
           <p class="fact">
             "Melitele, Great Mother, protect us from evil, from unclean devils
             and foul demons, and most of all from the clutches of katakans and
             nekurats..."
           </p>
-          <ul class="vampilist">
+          <ul class="vampilist list">
             <li><span>Class</span>: Vampire</li>
             <li><span>Habitat</span>: Ruins and Abandoned Villages</li>
             <li><span>Weakness</span>:Moondust, Yyden, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             Katakans hide in the shadows and feed on blood. They resemble
             enormous bats – though with long fangs and even longer talons. And,
             as if that weren't terror enough, they can turn invisible, waiting
@@ -1096,20 +1097,20 @@
 
       <!-- L -->
 
-      <div class="relic">
-        <h3 class="relicheader">Leshen</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Leshen</h3>
         <img src="monsterTradingCards/leshen.webp" alt="Leshen" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">
             "We never hunt in these woods. Never. Even if it means the whole
             village starves."
           </p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relic</li>
             <li><span>Habitat</span>: Dense primeval woods</li>
             <li><span>Weakness</span>: Relict Oil, Dimeritium Bomb, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             Leshens use their inborn magic to control the plants and animals in
             their territory. Those old enough to earn the appellation "ancient"
             wield advanced skills and tactics that make them particularly
@@ -1120,37 +1121,37 @@
 
       <!-- N -->
 
-       <div class="ogroi">
-        <h3 class="ogroiheader">Nekkers</h3>
+       <div class="ogroi card">
+        <h3 class="ogroiheader card-title">Nekkers</h3>
         <img src="monsterTradingCards/nekker.webp" alt="A Single Nekker" />
-        <div class="ogroimaintext">
+        <div class="maintext ogroi-text">
           <p class="fact">"Take heed, gents, there's nekkers under this here bridge. If you all cross at once, without slowing or stopping, there's nothing to fear. But if your cart throws an axle and you get stuck out there... Well, close your eyes and pray to Melitele."</p>
-          <ul class="ogroilist">
+          <ul class="ogroilist list">
             <li><span>Class</span>: Ogroid</li>
             <li><span>Habitat</span>: Dark damp woods</li>
             <li><span>Weakness</span>:Northern Wind, Ogroid Oil</li>
           </ul>
-          <p>
+          <p class="details">
             A lone nekker is harmless. Five are dangerous. Ten can kill even a veteran monster slayer. Particularly troublesome are the larger, stronger individuals known as warriors, as well as the rare breed of nekkers known as phoocas.          </p>
         </div>
       </div>
 
 
-      <div class="spect">
-        <h3 class="spectheader">Nightwraith</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Nightwraith</h3>
         <img src="monsterTradingCards/nightwraith.webp" alt="Nightwraith" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">
             "Nightwraiths exude this immense sadness, this helpless wraith... I
             fear them, same as anyone. But most of all I feel sorry for
             them."<br />
           </p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: Rural areas at night</li>
             <li><span>Weakness</span>: Moon dust, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             Like noonwraiths, nightwraiths are only found in rural areas.
             Travelers fall victim to them most often, but if legends are to be
             believed they also sneak into huts at times and murder peasants in
@@ -1159,21 +1160,21 @@
         </div>
       </div>
 
-      <div class="spect">
-        <h3 class="spectheader">Noonwraith</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Noonwraith</h3>
         <img src="monsterTradingCards/noonwraith.webp" alt="Noonwraith" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">
             "Despite what is commonly thought, peasants do not interrupt their
             labors at midday to get out of the sun - they do it to avoid
             noonwraiths."<br />
           </p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: Rural areas at high noon</li>
             <li><span>Weakness</span>: Specter Oil</li>
           </ul>
-          <p>
+          <p class="details">
             Crops swaying in the fields on a windless day indicate that a
             noonwraith is nearby. These monsters kill humans who venture into
             the fields at noontime.
@@ -1183,55 +1184,55 @@
 
       <!-- P -->            
       
-      <div class="insec">
-        <h3 class="insecheader">Pale Widow</h3>
+      <div class="insec card">
+        <h3 class="insecheader card-title">Pale Widow</h3>
         <img src="monsterTradingCards/paleWidow.webp" alt="Pale Widow" />
-        <div class="insecmaintext">
+        <div class="maintext insec-text">
           <p class="fact">"Never have I seen such a creature! It was like a giant centipede, but white, utterly white!"</p>
-          <ul class="inseclist">
+          <ul class="inseclist list">
             <li><span>Class</span>: Insectoid</li>
             <li><span>Habitat</span>: Deep underground</li>
             <li><span>Weakness</span>: Insectoid Oil, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             This rare variety of giant centipede dwells in underground lairs and owes its name to its unusual, pale white coloring. Like the more common giant centipede, its body is covered in hard chitinous armor, with numerous hooked limbs sticking out from underneath.
           </p>
         </div>
       </div>
 
-      <div class="spect">
-        <h3 class="spectheader">Penitent</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Penitent</h3>
         <img src="monsterTradingCards/penitent.webp" alt="Penitent" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">"I run back inside, hasp the doors, and then I hear it - someone whispering my name. Mikkjaaal, Mikkjaaal!
             "</p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: Eldberg Lighthouse</li>
             <li><span>Weakness</span>: Specter Oil, Moon dust, Yrden, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Wherever this wraith haunts immediately becomes enveloped in thick fog and darkness - and those that wander into it usually never return.
           </p>
         </div>
       </div>
 
 
-      <div class="spect">
-        <h3 class="spectheader">Plague Maidens</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Plague Maidens</h3>
         <img src="monsterTradingCards/plaguemaiden.webp" alt="Plague Maiden" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">
             "Patients seem to have hallucinations of a woman covered in scabs
             and boils, with rats scurrying about all around her. These ravings
             subsided after an administration of henbane and poppy extract."<br />
           </p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: Near plague-ridden communities</li>
             <li><span>Weakness</span>: Specter Oil, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             As the name "plague maiden" suggests, these wraiths take the
             appearance of females, though exactly why that is remains a mystery.
             Some speculate they, like other such specters, arise from the
@@ -1244,40 +1245,40 @@
 
       <!-- R -->
 
-      <div class="ogroi">
-        <h3 class="ogroiheader">Rock Troll</h3>
+      <div class="ogroi card">
+        <h3 class="ogroiheader card-title">Rock Troll</h3>
         <img src="monsterTradingCards/rockTroll.webp" alt="Rock Troll" />
-        <div class="ogroimaintext">
+        <div class="maintext ogroi-text">
           <p class="fact">"Man must riddly talk. But no tricksy. Or troll boom man head.
             "</p>
-          <ul class="ogroilist">
+          <ul class="ogroilist list">
             <li><span>Class</span>: Ogroid</li>
             <li><span>Habitat</span>: High, rocky mountains</li>
             <li><span>Weakness</span>: Orgoid, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Trolls are able to use fire and simple tools, and some of them have even mastered the basics of Common Speech. Though linguistic nuances such as conjugations and declinations escape them, they are extremely fond of riddles, rhymes and all sorts of wordplay.
           </p>
         </div>
       </div>
 
 
-      <div class="necro">
-        <h3 class="necroheader">Rotfiend</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Rotfiend</h3>
         <img src="monsterTradingCards/rotfiend.webp" alt="Rotfiend" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "Course it reeks. Think they're called rotfiends because they smell
             like roses?"<br />
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li>
               <span>Habitat</span>: Battlefields and disease-stricken areas
             </li>
             <li><span>Weakness</span>: Necrophage Oil</li>
           </ul>
-          <p>
+          <p class="details">
             Rotfiends resemble decomposing human bodies that have been stripped
             of their skin. Their presence is given away by the overwhelming
             stench of the rot which gives them their name. Devourers are a
@@ -1289,21 +1290,21 @@
 
       <!-- S -->
 
-      <div class="hybri">
-        <h3 class="hybriheader">Siren</h3>
+      <div class="hybri card">
+        <h3 class="hybriheader card-title">Siren</h3>
         <img src="monsterTradingCards/siren.webp" alt="Siren" />
-        <div class="hybrimaintext">
+        <div class="maintext hybri-text">
           <p class="fact">
             "Out at sea, if you hear a beautiful woman singing, turn the ship
             around at once. You understand? Even if it means sailing straight
             back into a storm."
           </p>
-          <ul class="hybrilist">
+          <ul class="hybrilist list">
             <li><span>Class</span>: Hybrid</li>
             <li><span>Habitat</span>: The coasts of the North Sea</li>
             <li><span>Weakness</span>: Grapeshot, Igni, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Once a naive sailor gets within arm's reach of these beautiful
             creatures, their fair faces suddenly turn to fang-filled, fish-like
             maws, and lovely tails promising unknown delights become sharp,
@@ -1312,38 +1313,38 @@
         </div>
       </div>
     
-      <div class="relic">
-        <h3 class="relicheader">Shaelmaar</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Shaelmaar</h3>
         <img src="monsterTradingCards/shaelmaar.webp" alt="Shaelmaar" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">"The earth's innards are home to mighty strange and fearsome beasts. Were they ever to decide to ramble up to the surface, we'd all be gutted the very first day o' the invasion.
             "</p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Deep undergound</li>
             <li><span>Weakness</span>: Relict Oil, Samum, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Since shaelmaars are blind, they find their way by sensing vibrations and listening for sounds. Thus the best tactic when fighting such a monster is to hurl something heavy or noisy against a nearby boulder or wall. Then pray silently that the beast will roll towards the sound and knock itself out upon striking into the obstacle.          </p>
         </div>
       </div>
 
-      <div class="draco">
-        <h3 class="dracoheader">Slyzard</h3>
+      <div class="draco card">
+        <h3 class="dracoheader card-title">Slyzard</h3>
         <img src="monsterTradingCards/slyzard.webp" alt="Slyzard" />
-        <div class="dracomaintext">
+        <div class="maintext draco-text">
           <p class="fact">
             "Some peasants once offered me a king's ransom to slay a slyzard. A
             damned hefty purse, chock full o' gold... But I turned 'em down.
             Coin's no good if you're dead. And a slyzard, that's no fuckin'
             forktail."
           </p>
-          <ul class="dracolist">
+          <ul class="dracolist list">
             <li><span>Class</span>: Draconid</li>
             <li><span>Habitat</span>: Dragon Mountains</li>
             <li><span>Weakness</span>: Grapeshot, Aard, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Slyzards are often mistaken for wyverns or forktails. Yet make no
             mistake: slyzards are nasty, terribly dangerous beasts, and
             confusing them for wyverns will end very badly for the confuser.
@@ -1354,33 +1355,33 @@
         </div>
       </div>
 
-      <div class="relic">
-        <h3 class="relicheader">Spriggan</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Spriggan</h3>
         <img src="monsterTradingCards/spriggan.png" alt="Spriggan" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">"I was gathering berries, as one does this time of year, when suddenly the trees shook and I saw this... this thing..."</p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Unfrequented woodlands</li>
             <li><span>Weakness</span>: Relict Oil, Dimeritium, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             Spriggans do not usually attack humans if unprovoked, but when irritated they can be quite fearsome, and, as they possess considerable strength, they are capable of doing great damage. Their appetite is such that they can devour more flesh than an army at a wedding.
           </p>
         </div>
       </div>
 
-      <div class="hybri">
-        <h3 class="hybriheader">Succubus</h3>
+      <div class="hybri card">
+        <h3 class="hybriheader card-title">Succubus</h3>
         <img src="monsterTradingCards/succubus.webp" alt="Succubus" />
-        <div class="hybrimaintext">
+        <div class="maintext hybri-text">
           <p class="fact">"Again?! Good grief, woman, I'm spent..."</p>
-          <ul class="hybrilist">
+          <ul class="hybrilist list">
             <li><span>Class</span>: Hybrid</li>
             <li><span>Habitat</span>:Towns and Villages</li>
             <li><span>Weakness</span>: Hybrid Oil, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Unlike other monsters, succubi and menads feel no desire to kill, do
             not crave human blood and usually do not, in fact, mean any harm at
             all. They are motivated by one thing and one thing only: an
@@ -1389,17 +1390,17 @@
         </div>
       </div>
 
-      <div class="relic">
-        <h3 class="relicheader">Sylvan</h3>
+      <div class="relic card">
+        <h3 class="relicheader card-title">Sylvan</h3>
         <img src="monsterTradingCards/sylvan.webp" alt="Sylvan" />
-        <div class="relicmaintext">
+        <div class="maintext relic-text">
           <p class="fact">"Sylvans are cruel, greedy and treacherous. Still, I prefer them to dh'oine."</p>
-          <ul class="reliclist">
+          <ul class="reliclist list">
             <li><span>Class</span>: Relict</li>
             <li><span>Habitat</span>: Deep Woods</li>
             <li><span>Weakness</span>: Relict Oil, Samum, Devil's Puffball, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             Sylvans and Yakshas, a kindred species, are extremely rare woodland creatures whose appearance combines traits of goats and rotund men. These beings usually pose little danger, for they limit their contact with humans to playing harmless (though often bothersome) tricks and eating crops from their fields.
 
           </p>
@@ -1408,17 +1409,17 @@
 
       <!-- T -->
 
-      <div class="curse">
-        <h3 class="curseheader">The Toad Prince</h3>
+      <div class="curse card">
+        <h3 class="curseheader card-title">The Toad Prince</h3>
         <img src="monsterTradingCards/theToadPrince.webp" alt="The Toad Prince" />
-        <div class="cursemaintext">
+        <div class="maintext curse-text">
           <p class="fact">"The girl walked up to the edge of the pond. There, squatting amidst the fragrant lilies and broad lily-pads, she saw a most unusual sight: a small green frog with a golden crown perched on its warty head."</p>
-          <ul class="curselist">
+          <ul class="curselist list">
             <li><span>Class</span>: Cursed One</li>
             <li><span>Habitat</span>: The sewers of Oxenfurt</li>
             <li><span>Weakness</span>: Northern Wind, Golden Oriole, Curse oil, Yrden</li>
           </ul>
-          <p>
+          <p class="details">
             The Toad Prince prowling the Oxenfurt sewers was actually Prince Sirvat,[1] an heir to the Ofiri throne. He had been inadvertently cursed by Olgierd von Everec out of anger when the parents of Olgierd's love, Iris, intended to give their daughter's hand in marriage to the visiting prince. 
           </p>
         </div>
@@ -1426,18 +1427,18 @@
 
       <!-- V -->
 
-      <div class="insec">
-        <h3 class="insecheader">Venomous Arachaesae</h3>
+      <div class="insec card">
+        <h3 class="insecheader card-title">Venomous Arachaesae</h3>
         <img src="monsterTradingCards/venomousarachas.webp" alt="Venomous Arachasae" />
-        <div class="insecmaintext">
+        <div class="maintext insec-text">
           <p class="fact">"Barley nicked me, I'll be fine.
             "</p>
-          <ul class="inseclist">
+          <ul class="inseclist list">
             <li><span>Class</span>: Insectoid</li>
             <li><span>Habitat</span>: Forests</li>
             <li><span>Weakness</span>: Insectoid Oil, Golden Oriole</li>
           </ul>
-          <p>
+          <p class="details">
             Though all arachasae are highly venomous, this breed produces an especially strong toxin. A few drops are enough to kill a grown man - unless that man is a witcher, whose mutations will neutralize small amounts of this venom. Large quantities, however, will kill anything they touch, with mutations only prolonging an inevitable and painful death in such instances.
           </p>
         </div>
@@ -1445,20 +1446,20 @@
 
       <!-- W -->
 
-      <div class="necro">
-        <h3 class="necroheader">Water Hag</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Water Hag</h3>
         <img src="monsterTradingCards/waterHag.webp" alt="Water Hag" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "Folk say water hags are drowners' wives. If that be true, 'tain't
             no wonder why they're such ornery bitches."
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li><span>Habitat</span>: Swamps</li>
             <li><span>Weakness</span>: Northern Wind, Quen, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             The body of a Water Hag is wrinkled, wart-covered, and nearly two
             yards tall, with skin the color of a long-dead cadaver and stinking
             of muck and fish.
@@ -1466,36 +1467,36 @@
         </div>
       </div>
 
-      <div class="curse">
-        <h3 class="curseheader">Werewolf</h3>
+      <div class="curse card">
+        <h3 class="curseheader card-title">Werewolf</h3>
         <img src="monsterTradingCards/werewolf.webp" alt="Werewolf" />
-        <div class="cursemaintext">
+        <div class="maintext curse-text">
           <p class="fact">"The baron's body swelled as his muscles grew, his noble attire fell in tatters on the marble floor. 'My beloved, you... you are so hairy. You are a werewolf!'"</p>
-          <ul class="curselist">
+          <ul class="curselist list">
             <li><span>Class</span>: Cursed One</li>
             <li><span>Habitat</span>: Under a full moon</li>
             <li><span>Weakness</span>: Moon dust, Devil's Puffball, Cursed Oil, Igni</li>
           </ul>
-          <p>
+          <p class="details">
             Neither animal, nor man, the Werewolf takes the worst from both species: the bloodlust and primal nature of a wolf, and the ruthlessness and cruelty of a human.
           </p>
         </div>
       </div>
 
-      <div class="necro">
-        <h3 class="necroheader">Wight</h3>
+      <div class="necro card">
+        <h3 class="necroheader card-title">Wight</h3>
         <img src="monsterTradingCards/wight.webp" alt="Wight" />
-        <div class="necromaintext">
+        <div class="maintext necro-text">
           <p class="fact">
             "They say the dead like quiet. I don't know about the dead, but
             wights certainly do."<br />
           </p>
-          <ul class="necrolist">
+          <ul class="necrolist list">
             <li><span>Class</span>: Necrophage</li>
             <li><span>Habitat</span>: Ancient Burial Sites</li>
             <li><span>Weakness</span>: Necrophage Oil, Axii</li>
           </ul>
-          <p>
+          <p class="details">
             Though wights are ghastly and threatening in appearance, one should
             not approach them with sword drawn or attack them unprovoked. Left
             alone, they present no serious danger to anyone and are far more
@@ -1504,21 +1505,21 @@
         </div>
       </div>
 
-      <div class="spect">
-        <h3 class="spectheader">Wraith</h3>
+      <div class="spect card">
+        <h3 class="spectheader card-title">Wraith</h3>
         <img src="monsterTradingCards/wraith.webp" alt="Wraith" />
-        <div class="spectmaintext">
+        <div class="maintext spect-text">
           <p class="fact">
             Finish all your business before you die. Bid your loved ones
             farewell. Write your will. Apologize to those you've wronged.
             Otherwise, you'll never truly leave this world.<br />
           </p>
-          <ul class="spectlist">
+          <ul class="spectlist list">
             <li><span>Class</span>: Specter</li>
             <li><span>Habitat</span>: Near cemeteries at night</li>
             <li><span>Weakness</span>: Moon dust, Yrden, Quen</li>
           </ul>
-          <p>
+          <p class="details">
             Wraiths are usually encountered at night, near cemeteries, catacombs
             and other such burial places, or else near the places that were
             important to them in life: abandoned homes, crumbling castles or
@@ -1528,20 +1529,20 @@
       </div>
 
 
-      <div class="draco">
-        <h3 class="dracoheader">Wyvern</h3>
+      <div class="draco card">
+        <h3 class="dracoheader card-title">Wyvern</h3>
         <img src="monsterTradingCards/wyvern.webp" alt="Wyvern" />
-        <div class="dracomaintext">
+        <div class="maintext draco-text">
           <p class="fact">
             "Most dangerous of all are the royal wyverns. Or, as sthey're called
             in some circles, the royal pains in the arse."
           </p>
-          <ul class="dracolist">
+          <ul class="dracolist list">
             <li><span>Class</span>: Draconid</li>
             <li><span>Habitat</span>: Anywhere with sky access</li>
             <li><span>Weakness</span>: Grapeshot, Aard</li>
           </ul>
-          <p>
+          <p class="details">
             Wyverns are often mistaken for dragons, and, though they are much
             smaller than their more famous kin and do not breathe fire, they arw
             likwise extremely dangerous monsters.
@@ -1551,7 +1552,7 @@
 
     </main>
 
-    <p>
+    <p class="details">
       <strong>Source</strong> -
       <a
         href="https://witcher.fandom.com/wiki/The_Witcher_3_bestiary"
@@ -1559,6 +1560,7 @@
         >The Witcher 3 Wiki - Bestiary</a
       >
     </p>
-    <script src="../SCRIPT/monster-trading-cards.js"></script>
+    <!-- <script src="monster-trading-cards.js"></script> -->
+    <script src="monster-trading-cards-2.js"></script>
   </body>
 </html>
